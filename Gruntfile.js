@@ -6,7 +6,7 @@ module.exports = function (grunt) {
       js: {
         // add/remove/edit files and order to project needs
         src: ['assets/js/*.js'],
-        dest: 'assets/prod/<%= pkg.name %>.<%= pkg.version %>.js'
+        dest: 'assets/prod/<%= pkg.name %>.js'
       }
     },
     //LESS
@@ -47,12 +47,16 @@ module.exports = function (grunt) {
     // watch - tasks triggered with [grunt watch] is initiated in the cli
     watch:{
       cssmin: {
-        files: ['assets/prod/production.css'],
+        files: ['assets/prod/glacier.css'],
         tasks: ['cssmin']
       },
       jsuglify:{
         files: ['assets/js/*.js'],
         tasks: ['uglify']
+      },
+      less:{
+        files: ['assets/less/*.less'],
+        tasks: ['less']
       }
     }
 
@@ -64,5 +68,5 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-less');
   // tasks that will be triggered with [grunt] in the cli
-  grunt.registerTask('default', ['concat:css', 'cssmin:css', 'concat:js', 'uglify:js']);
+  grunt.registerTask('default', ['cssmin:css', 'concat:js', 'uglify:js','less:development']);
 };
