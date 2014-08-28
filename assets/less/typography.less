@@ -65,7 +65,7 @@ p + .drop-cap{
  *
  */
 html{
-	font: normal 112.5%/1.65 Helvetica,Arial,sans-serif;
+	font: normal @dsize/1.65 @dfont;
 }
 body{
 	-webkit-hyphens: auto;
@@ -74,7 +74,7 @@ body{
 	-o-hyphens: auto;
 	hyphens: auto;
 	word-wrap: break-word;
-	color: #444444;
+	color: @dcolor;
 }
 /**
  *
@@ -101,6 +101,7 @@ h6{
 	margin-top: 0;
 	text-rendering: optimizeLegibility;
 	color:@hcolor;
+  font-family:@hfont;
 }
 .tera{
 	font-size: 117px;

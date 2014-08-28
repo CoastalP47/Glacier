@@ -1,7 +1,19 @@
 /*
   Source LESS for Glacier. All other imported LESS styles are available separately.
 */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700,600);
 
+/* background settings */
+@bg:lightgrey;
+
+/* default typography */
+@dfont:'Open Sans',sans-serif;
+@dsize:100%;
+@dcolor:#444;
+
+
+/* header typography */
+@hfont:@dfont;
 @hcolor:#34495e;
 @h1size:60px;
   @h1margin:9px;
@@ -16,6 +28,11 @@
 @h6size:18px;
   @h6margin:30px;
 
+
+/* grid settings */
+
+
+/* other settings */
 
 @import "reset.less";
 @import "grid.less";
