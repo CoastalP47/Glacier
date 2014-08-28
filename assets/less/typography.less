@@ -1,0 +1,322 @@
+/**
+ *
+ * =======================================================================
+	 Unicode Ampersand
+ * =======================================================================
+ */
+@font-face{
+	font-family: "Ampersand";
+	src: local("Georgia"), local("Garamond"), local("Palatino"), local("Book Antiqua");
+	unicode-range: U+0026;
+}
+@font-face{
+	font-family: "Ampersand";
+	src: local("Georgia");
+	unicode-range: U+270C;
+}
+.ampersand{
+	font-family: Ampersand, Verdana, sans-serif;
+}
+/**
+ *
+ * =======================================================================
+	 Word Wrap
+ * =======================================================================
+ */
+.breakword{
+	word-wrap: break-word;
+}
+.normal-wrap{
+	word-wrap: normal;
+}
+.inherit-wrap{
+	word-wrap: auto;
+}
+/**
+ *
+ * =======================================================================
+ * Drop Capitals:
+ * Extend this object into your markup.
+
+	 <p class="drop-cap">What a wonderful day it is out there wouldn't you'd say?</p>
+
+	* =======================================================================
+ */
+.drop-cap:first-letter{
+	float: left;
+	margin: auto .25em auto auto;
+	padding: inherit;
+	font-size: 4em;
+	font-family: inherit;
+	line-height: 1;
+	text-indent: 0;
+	background: transparent;
+	color: inherit;
+}
+p + .drop-cap{
+	text-indent: 0;
+	margin-top: 0;
+}
+/**
+ *
+ * =======================================================================
+	 Base Type
+ * =======================================================================
+ *
+ */
+html{
+	font: normal 112.5%/1.65 Helvetica,Arial,sans-serif;
+}
+body{
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	-o-hyphens: auto;
+	hyphens: auto;
+	word-wrap: break-word;
+	color: #444444;
+}
+/**
+ *
+ * =======================================================================
+	 Fine Print
+ * =======================================================================
+ */
+small{
+	font-size: 65%;
+}
+/**
+ *
+ * =======================================================================
+	 Headings
+ * =======================================================================
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	line-height: 1;
+	margin-top: 0;
+	text-rendering: optimizeLegibility;
+	color:@hcolor;
+}
+.tera{
+	font-size: 117px;
+	font-size: 6.5rem;
+	margin-bottom: 4.56923px;
+	margin-bottom: 0.25385rem;
+}
+.giga{
+	font-size: 90px;
+	font-size: 5rem;
+	margin-bottom: 5.94px;
+	margin-bottom: 0.33rem;
+}
+.mega{
+	font-size: 72px;
+	font-size: 4rem;
+	margin-bottom: 7.425px;
+	margin-bottom: 0.4125rem;
+}
+h1,
+.alpha{
+	font-size: @h1size;
+	font-size:  (@h1size/18)rem;
+	margin-bottom: @h1margin;
+	margin-bottom: (@h1margin/18)rem;
+}
+h2,
+.beta{
+	font-size: @h2size;
+	font-size: (@h2size/18)rem;
+	margin-bottom: @h2margin;
+  margin-bottom: (@h2margin/18)rem;
+}
+h3,
+.gamma{
+	font-size: @h3size;
+	font-size: (@h3size/18)rem;
+	margin-bottom: @h3margin;
+  margin-bottom: (@h3margin/18)rem;
+}
+h4,
+.delta{
+	font-size: @h4size;
+	font-size: (@h4size/18)rem;
+	margin-bottom: @h4margin;
+  margin-bottom: (@h4margin/18)rem;
+}
+h5,
+.epsilon{
+	font-size: @h5size;
+	font-size: (@h5size/18)rem;
+	margin-bottom: @h5margin;
+  margin-bottom: (@h5margin/18)rem;
+}
+h6,
+.zeta{
+	font-size: @h6size;
+	font-size: (@h6size/18)rem;
+	margin-bottom: @h6margin;
+  margin-bottom: (@h6margin/18)rem;
+}
+/**
+ *
+ * =======================================================================
+	 Paragraphs and Indentation
+ * =======================================================================
+ */
+p{
+	margin: auto auto 1.5em; /* bottom margin for paragraphs */
+}
+/**
+ *
+ * =======================================================================
+	 Hyphens
+ * =======================================================================
+ */
+abbr,
+acronym,
+blockquote,
+code,
+dir,
+kbd,
+listing,
+plaintext,
+q,
+samp,
+tt,
+var,
+xmp{
+	-webkit-hyphens: none; /* Safari 5.1 thru 6, iOS 4.2 thru 6 */
+	-moz-hyphens: none; /* Firefox 16 thru 20 */
+	-ms-hyphens: none; /* IE10 */
+	-o-hyphens: none; /* PRESTO...haha LOL */
+	hyphens: none;	 /* W3C standard */
+}
+/**
+ *
+ * =======================================================================
+	 Code Blocks
+ * =======================================================================
+ */
+pre code{
+	word-wrap: normal;
+	white-space: -moz-pre-wrap;
+	white-space: pre-wrap;
+}
+pre{
+	white-space: pre;
+}
+code{
+	white-space: pre;
+	font-family: monospace;
+}
+/**
+ *
+ * =======================================================================
+ * Abbreviations Markup
+ * Extend this object into your markup
+
+	<abbr title="hyper text markup language">HMTL</abbr>
+
+ * Extend this object into your markup.
+ * =======================================================================
+ */
+abbr{
+	font-variant: small-caps;
+	font-weight: 600;
+	text-transform: lowercase;
+	color: #808080;
+}
+abbr[title]:hover{
+	cursor: help;
+}
+/**
+ *
+ * =======================================================================
+	 Definition Lists
+ * =======================================================================
+ */
+.lining dt,
+.lining dd{
+	display: inline;
+	margin: 0;
+}
+.lining dt + dt:before,
+.lining dd + dt:before{
+	content: "\A";
+	white-space: pre;
+}
+.lining dd + dd:before{
+	content: ", ";
+}
+.lining dd:before{
+	content: ": ";
+	margin-left: -0.2em;
+}
+
+.dictionary-style dt{
+	display: inline;
+	counter-reset: definitions;
+}
+.dictionary-style dt + dt:before{
+	content: ", ";
+	margin-left: -0.2em;
+}
+.dictionary-style dd{
+	display: block;
+	counter-increment: definitions;
+}
+.dictionary-style dd:before{
+	content: counter(definitions, decimal) ". ";
+}
+/**
+ *
+ * =======================================================================
+	 Blockquotes
+ * =======================================================================
+ */
+.blockquote p:last-of-type{
+	margin-bottom: -0.825em;
+}
+
+.blockquote + figcaption{
+	display: block;
+	font-size: inherit;
+	text-align: right;
+}
+
+.blockquote + figcaption:before{
+	content: "-"; /* "-" is your citation flourish */
+}
+/**
+ *
+ * =======================================================================
+	 Pull Quotes
+ * =======================================================================
+ */
+.pull-quote{
+	position: relative;
+	padding: 1em;
+}
+.pull-quote:before,
+.pull-quote:after{
+	height: 1em;
+	opacity: 0.15;
+	position: absolute;
+	font-size: 4em;
+	color: #dc976e;
+}
+.pull-quote:before{
+	content: '“';
+	top: 0;
+	left: 0;
+}
+.pull-quote:after{
+	content: '”';
+	bottom: 0;
+	right: 0;
+}
