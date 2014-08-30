@@ -6,7 +6,7 @@
   <title>Glacier Responsive LESS Framework</title>
   <link rel="stylesheet" type="text/css" href="assets/prod/glacier.min.css">
   <script src="assets/libs/jquery-1.11.1.min.js"></script>
-  <script src="assets/prod/Glacier.js"></script>
+  <script src="assets/js/glacier.js"></script>
 </head>
 <body>
   <header>
@@ -19,16 +19,92 @@
     <div class="container cf">
       <div class="row">
         <div class="col col_4">
-          sidebar stuff
+          <ul class="gl-sidebar-dropdown">
+            <li><a href="#">Sidebar Item 1</a></li>
+            <li><a href="#">Sidebar Item 2</a></li>
+            <li><a href="#">Sidebar Item 3</a></li>
+            <li><a href="#">Sidebar Item 4</a>
+              <ul>
+                <li><a href="#">Sidebar s-Item 1</a></li>
+                <li><a href="#">Sidebar s-Item 2</a></li>
+                <li><a href="#">Sidebar s-Item 3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Sidebar Item 5</a></li>
+          </ul>
         </div>
         <div class="col col_8">
-          <h1>Heading 1</h1>
-          <h2>Heading 1</h2>
-          <h3>Heading 1</h3>
-          <h4>Heading 1</h4>
-          <h5>Heading 1</h5>
-          <h6>Heading 1</h6>
-          <p>Paragraph text with a <a href="#">Link!</a></p>
+          <section class="gl-section">
+            <h1>Typography</h1>
+            <h1>Heading 1</h1>
+            <h2>Heading 1</h2>
+            <h3>Heading 1</h3>
+            <h4>Heading 1</h4>
+            <h5>Heading 1</h5>
+            <h6>Heading 1</h6>
+            <p>Paragraph text with a <a href="#">Link!</a>, some <strong>bold</strong> and some <em>italics</em></p>
+            <blockquote>What's going on with blockquotes? Look right here and see!</blockquote>
+          </section>
+          <hr>
+          <section class="gl-section">
+            <h1>Forms</h1>
+            <form>
+              <div class="gl-form-field">
+                <label for="gl-input-text">Text input</label><input type="text" id="gl-input-text" />
+              </div>
+              <div class="gl-form-field">
+                <label for="gl-input-checkbox">Checkbox</label><input type="checkbox" id="gl-input-checkbox" />
+              </div>
+              <div class="gl-form-field">
+                <label for="gl-input-color">Color</label><input type="color" id="gl-input-color" />
+              </div>
+              <div class="gl-form-field">
+                <label for="gl-input-date">Date</label><input type="date" id="gl-input-date" />
+              </div>
+              <div class="gl-form-field">
+                <label for="gl-input-email">Email</label><input type="email" id="gl-input-email" />
+              </div>
+              <div class="gl-form-field">
+                <label for="gl-input-file">File</label><input type="file" id="gl-input-file" />
+              </div>
+              <div class="gl-form-field">
+                <label for="gl-input-image">Image</label><input type="image" id="gl-input-image" />
+              </div>
+              <div class="gl-form-field">
+                <label for="gl-input-month">Month</label><input type="month" id="gl-input-month" />
+              </div>
+              <div class="gl-form-field">
+                <label for="gl-input-number">Number</label><input type="number" id="gl-input-number" />
+              </div>
+              <div class="gl-form-field">
+                <label for="gl-input-password">Password</label><input type="password" id="gl-input-password" />
+              </div>
+              <div class="gl-form-field">
+                <label for="gl-input-radio">Radio</label><input type="radio" id="gl-input-radio" />
+              </div>
+              <div class="gl-form-field">
+                <label for="gl-input-range">Range</label><span class="gl-range-min">1</span><input type="range" id="gl-input-range" min="1" max="10" /><span class="gl-range-max">10</span><div class="gl-input-range-result"></div>
+              </div>
+              <div class="gl-form-field">
+                <label for="gl-input-search">Search</label><input type="search" id="gl-input-search" />
+              </div>
+              <div class="gl-form-field">
+                <label for="gl-input-tel">Tel</label><input type="tel" id="gl-input-tel" />
+              </div>
+              <div class="gl-form-field">
+                <label for="gl-input-time">Time</label><input type="time" id="gl-input-time" />
+              </div>
+              <div class="gl-form-field">
+                <label for="gl-input-url">Url</label><input type="url" id="gl-input-url" />
+              </div>
+              <div class="gl-form-field">
+                <label for="gl-input-week">Week</label><input type="week" id="gl-input-week" />
+              </div>
+              <div class="gl-form-field">
+                <label for="gl-input-reset">reset</label><input type="reset" id="gl-input-reset"/>
+                <label for="gl-input-submit">submit</label><input type="submit" id="gl-input-reset"/>
+            </form>
+          </section>
         </div>
       </div>
 

@@ -1,1 +1,905 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700,600);html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}.cf:before,.cf:after{content:" ";display:table}.cf:after{clear:both}.cf{*zoom:1}.mixin-col{border:0 solid rgba(0,0,0,0);float:left;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-moz-background-clip:padding-box!important;-webkit-background-clip:padding-box!important;background-clip:padding-box!important}.col{border:0 solid rgba(0,0,0,0);float:left;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-moz-background-clip:padding-box!important;-webkit-background-clip:padding-box!important;background-clip:padding-box!important}.mixin-col_first{margin-left:0}@media screen and (min-width:0) and (max-width:478px){.container{width:95%;margin:0 auto}.col{margin-left:1%;padding:0 .5%}.row .col:first-child{margin-left:0}.col_1{width:49.5%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_2{width:100%;border-left-width:0;padding:0 .5%;margin-left:1%}}@media screen and (min-width:479px) and (max-width:779px){.container{width:500px;margin:0 auto}.col{margin-left:1%;padding:0 .5%}.row .col:first-child{margin-left:0}.col_1{width:9.1%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_2{width:19.2%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_3{width:29.3%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_4{width:39.4%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_5{width:49.5%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_6{width:59.6%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_7{width:69.7%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_8{width:79.8%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_9{width:89.9%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_10{width:100%;border-left-width:0;padding:0 .5%;margin-left:1%}}@media screen and (min-width:780px) and (max-width:959px){.container{width:790px;margin:0 auto}.col{margin-left:1%;padding:0 .5%}.row .col:first-child{margin-left:0}.col_1{width:7.41666667%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_2{width:15.83333333%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_3{width:24.25%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_4{width:32.66666667%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_5{width:41.08333333%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_6{width:49.5%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_7{width:57.91666667%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_8{width:66.33333333%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_9{width:74.75%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_10{width:83.16666667%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_11{width:91.58333333%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_12{width:100%;border-left-width:0;padding:0 .5%;margin-left:1%}}@media screen and (min-width:960px) and (max-width:1199px){.container{width:1000px;margin:0 auto}.col{margin-left:1%;padding:0 .5%}.row .col:first-child{margin-left:0}.col_1{width:7.41666667%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_2{width:15.83333333%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_3{width:24.25%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_4{width:32.66666667%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_5{width:41.08333333%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_6{width:49.5%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_7{width:57.91666667%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_8{width:66.33333333%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_9{width:74.75%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_10{width:83.16666667%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_11{width:91.58333333%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_12{width:100%;border-left-width:0;padding:0 .5%;margin-left:1%}}@media screen and (min-width:1200px){.container{width:1200px;margin:0 auto}.col{margin-left:1%;padding:0 .5%}.row .col:first-child{margin-left:0}.col_1{width:7.41666667%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_2{width:15.83333333%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_3{width:24.25%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_4{width:32.66666667%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_5{width:41.08333333%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_6{width:49.5%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_7{width:57.91666667%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_8{width:66.33333333%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_9{width:74.75%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_10{width:83.16666667%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_11{width:91.58333333%;border-left-width:0;padding:0 .5%;margin-left:1%}.col_12{width:100%;border-left-width:0;padding:0 .5%;margin-left:1%}}@font-face{font-family:Ampersand;src:local("Georgia"),local("Garamond"),local("Palatino"),local("Book Antiqua");unicode-range:U+0026}@font-face{font-family:Ampersand;src:local("Georgia");unicode-range:U+270C}.ampersand{font-family:Ampersand,Verdana,sans-serif}.breakword{word-wrap:break-word}.normal-wrap{word-wrap:normal}.inherit-wrap{word-wrap:auto}.drop-cap:first-letter{float:left;margin:auto .25em auto auto;padding:inherit;font-size:4em;font-family:inherit;line-height:1;text-indent:0;background:0 0;color:inherit}p+.drop-cap{text-indent:0;margin-top:0}html{font:400 100%/1.65 'Open Sans',sans-serif}body{-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;-o-hyphens:auto;hyphens:auto;word-wrap:break-word;color:#444}small{font-size:65%}h1,h2,h3,h4,h5,h6{line-height:1;margin-top:0;text-rendering:optimizeLegibility;color:#34495e;font-family:'Open Sans',sans-serif}.tera{font-size:117px;font-size:6.5rem;margin-bottom:4.57px;margin-bottom:.25385rem}.giga{font-size:90px;font-size:5rem;margin-bottom:5.94px;margin-bottom:.33rem}.mega{font-size:72px;font-size:4rem;margin-bottom:7.43px;margin-bottom:.4125rem}h1,.alpha{font-size:60px;font-size:3.33px rem;margin-bottom:9px;margin-bottom:.5px rem}h2,.beta{font-size:48px;font-size:2.67px rem;margin-bottom:11px;margin-bottom:.61px rem}h3,.gamma{font-size:36px;font-size:2px rem;margin-bottom:15px;margin-bottom:.83px rem}h4,.delta{font-size:24px;font-size:1.33px rem;margin-bottom:22px;margin-bottom:1.22px rem}h5,.epsilon{font-size:21px;font-size:1.17px rem;margin-bottom:25px;margin-bottom:1.39px rem}h6,.zeta{font-size:18px;font-size:1px rem;margin-bottom:30px;margin-bottom:1.67px rem}p{margin:auto auto 1.5em}abbr,acronym,blockquote,code,dir,kbd,listing,plaintext,q,samp,tt,var,xmp{-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;-o-hyphens:none;hyphens:none}pre code{word-wrap:normal;white-space:-moz-pre-wrap;white-space:pre-wrap}pre{white-space:pre}code{white-space:pre;font-family:monospace}abbr{font-variant:small-caps;font-weight:600;text-transform:lowercase;color:gray}abbr[title]:hover{cursor:help}.lining dt,.lining dd{display:inline;margin:0}.lining dt+dt:before,.lining dd+dt:before{content:"\A";white-space:pre}.lining dd+dd:before{content:", "}.lining dd:before{content:": ";margin-left:-.2em}.dictionary-style dt{display:inline;counter-reset:definitions}.dictionary-style dt+dt:before{content:", ";margin-left:-.2em}.dictionary-style dd{display:block;counter-increment:definitions}.dictionary-style dd:before{content:counter(definitions,decimal) ". "}.blockquote p:last-of-type{margin-bottom:-.825em}.blockquote+figcaption{display:block;font-size:inherit;text-align:right}.blockquote+figcaption:before{content:"-"}.pull-quote{position:relative;padding:1em}.pull-quote:before,.pull-quote:after{height:1em;opacity:.15;position:absolute;font-size:4em;color:#dc976e}.pull-quote:before{content:'“';top:0;left:0}.pull-quote:after{content:'”';bottom:0;right:0}
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700,600);
+/*
+  Source LESS for Glacier. All other imported LESS styles are available separately.
+*/
+/* background settings */
+/* default typography */
+/* header typography */
+/* grid settings */
+/* other settings */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.cf:after {
+  clear: both;
+}
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1;
+}
+.mixin-col {
+  border: 0px solid rgba(0, 0, 0, 0);
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-background-clip: padding-box !important;
+  -webkit-background-clip: padding-box !important;
+  background-clip: padding-box !important;
+}
+.col {
+  border: 0px solid rgba(0, 0, 0, 0);
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-background-clip: padding-box !important;
+  -webkit-background-clip: padding-box !important;
+  background-clip: padding-box !important;
+}
+.mixin-col_first {
+  margin-left: 0;
+}
+@media screen and (min-width: 0px) and (max-width: 478px) {
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .col {
+    margin-left: 1%;
+    padding: 0 0.5%;
+  }
+  .row .col:first-child {
+    margin-left: 0;
+  }
+  .col_1 {
+    width: 49.5%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_2 {
+    width: 100%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+}
+@media screen and (min-width: 479px) and (max-width: 779px) {
+  .container {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .col {
+    margin-left: 1%;
+    padding: 0 0.5%;
+  }
+  .row .col:first-child {
+    margin-left: 0;
+  }
+  .col_1 {
+    width: 9.1%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_2 {
+    width: 19.2%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_3 {
+    width: 29.3%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_4 {
+    width: 39.4%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_5 {
+    width: 49.5%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_6 {
+    width: 59.6%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_7 {
+    width: 69.7%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_8 {
+    width: 79.8%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_9 {
+    width: 89.9%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_10 {
+    width: 100%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+}
+@media screen and (min-width: 780px) and (max-width: 959px) {
+  .container {
+    width: 790px;
+    margin: 0 auto;
+  }
+  .col {
+    margin-left: 1%;
+    padding: 0 0.5%;
+  }
+  .row .col:first-child {
+    margin-left: 0;
+  }
+  .col_1 {
+    width: 7.41666667%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_2 {
+    width: 15.83333333%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_3 {
+    width: 24.25%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_4 {
+    width: 32.66666667%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_5 {
+    width: 41.08333333%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_6 {
+    width: 49.5%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_7 {
+    width: 57.91666667%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_8 {
+    width: 66.33333333%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_9 {
+    width: 74.75%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_10 {
+    width: 83.16666667%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_11 {
+    width: 91.58333333%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_12 {
+    width: 100%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1199px) {
+  .container {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  .col {
+    margin-left: 1%;
+    padding: 0 0.5%;
+  }
+  .row .col:first-child {
+    margin-left: 0;
+  }
+  .col_1 {
+    width: 7.41666667%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_2 {
+    width: 15.83333333%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_3 {
+    width: 24.25%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_4 {
+    width: 32.66666667%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_5 {
+    width: 41.08333333%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_6 {
+    width: 49.5%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_7 {
+    width: 57.91666667%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_8 {
+    width: 66.33333333%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_9 {
+    width: 74.75%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_10 {
+    width: 83.16666667%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_11 {
+    width: 91.58333333%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_12 {
+    width: 100%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .col {
+    margin-left: 1%;
+    padding: 0 0.5%;
+  }
+  .row .col:first-child {
+    margin-left: 0;
+  }
+  .col_1 {
+    width: 7.41666667%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_2 {
+    width: 15.83333333%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_3 {
+    width: 24.25%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_4 {
+    width: 32.66666667%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_5 {
+    width: 41.08333333%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_6 {
+    width: 49.5%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_7 {
+    width: 57.91666667%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_8 {
+    width: 66.33333333%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_9 {
+    width: 74.75%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_10 {
+    width: 83.16666667%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_11 {
+    width: 91.58333333%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+  .col_12 {
+    width: 100%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+}
+/**
+ *
+ * =======================================================================
+	 Unicode Ampersand
+ * =======================================================================
+ */
+@font-face {
+  font-family: "Ampersand";
+  src: local("Georgia"), local("Garamond"), local("Palatino"), local("Book Antiqua");
+  unicode-range: U+0026;
+}
+@font-face {
+  font-family: "Ampersand";
+  src: local("Georgia");
+  unicode-range: U+270C;
+}
+.ampersand {
+  font-family: Ampersand, Verdana, sans-serif;
+}
+/**
+ *
+ * =======================================================================
+	 Word Wrap
+ * =======================================================================
+ */
+.breakword {
+  word-wrap: break-word;
+}
+.normal-wrap {
+  word-wrap: normal;
+}
+.inherit-wrap {
+  word-wrap: auto;
+}
+/**
+ *
+ * =======================================================================
+ * Drop Capitals:
+ * Extend this object into your markup.
+
+	 <p class="drop-cap">What a wonderful day it is out there wouldn't you'd say?</p>
+
+	* =======================================================================
+ */
+.drop-cap:first-letter {
+  float: left;
+  margin: auto .25em auto auto;
+  padding: inherit;
+  font-size: 4em;
+  font-family: inherit;
+  line-height: 1;
+  text-indent: 0;
+  background: transparent;
+  color: inherit;
+}
+p + .drop-cap {
+  text-indent: 0;
+  margin-top: 0;
+}
+/**
+ *
+ * =======================================================================
+	 Base Type
+ * =======================================================================
+ *
+ */
+html {
+  font: normal 100%/1.65 'Open Sans', sans-serif;
+}
+body {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+  word-wrap: break-word;
+  color: #444444;
+}
+/**
+ *
+ * =======================================================================
+	 Fine Print
+ * =======================================================================
+ */
+small {
+  font-size: 65%;
+}
+/**
+ *
+ * =======================================================================
+	 Headings
+ * =======================================================================
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+  margin-top: 0;
+  text-rendering: optimizeLegibility;
+  color: #34495e;
+  font-family: 'Open Sans', sans-serif;
+}
+.tera {
+  font-size: 117px;
+  font-size: 6.5rem;
+  margin-bottom: 4.56923px;
+  margin-bottom: 0.25385rem;
+}
+.giga {
+  font-size: 90px;
+  font-size: 5rem;
+  margin-bottom: 5.94px;
+  margin-bottom: 0.33rem;
+}
+.mega {
+  font-size: 72px;
+  font-size: 4rem;
+  margin-bottom: 7.425px;
+  margin-bottom: 0.4125rem;
+}
+h1,
+.alpha {
+  font-size: 60px;
+  font-size: 3.33333333px rem;
+  margin-bottom: 9px;
+  margin-bottom: 0.5px rem;
+}
+h2,
+.beta {
+  font-size: 48px;
+  font-size: 2.66666667px rem;
+  margin-bottom: 11px;
+  margin-bottom: 0.61111111px rem;
+}
+h3,
+.gamma {
+  font-size: 36px;
+  font-size: 2px rem;
+  margin-bottom: 15px;
+  margin-bottom: 0.83333333px rem;
+}
+h4,
+.delta {
+  font-size: 24px;
+  font-size: 1.33333333px rem;
+  margin-bottom: 22px;
+  margin-bottom: 1.22222222px rem;
+}
+h5,
+.epsilon {
+  font-size: 21px;
+  font-size: 1.16666667px rem;
+  margin-bottom: 25px;
+  margin-bottom: 1.38888889px rem;
+}
+h6,
+.zeta {
+  font-size: 18px;
+  font-size: 1px rem;
+  margin-bottom: 30px;
+  margin-bottom: 1.66666667px rem;
+}
+/**
+ *
+ * =======================================================================
+	 Paragraphs and Indentation
+ * =======================================================================
+ */
+p {
+  margin: auto auto 1.5em;
+  /* bottom margin for paragraphs */
+}
+/**
+ *
+ * =======================================================================
+	 Hyphens
+ * =======================================================================
+ */
+abbr,
+acronym,
+blockquote,
+code,
+dir,
+kbd,
+listing,
+plaintext,
+q,
+samp,
+tt,
+var,
+xmp {
+  -webkit-hyphens: none;
+  /* Safari 5.1 thru 6, iOS 4.2 thru 6 */
+  -moz-hyphens: none;
+  /* Firefox 16 thru 20 */
+  -ms-hyphens: none;
+  /* IE10 */
+  -o-hyphens: none;
+  /* PRESTO...haha LOL */
+  hyphens: none;
+  /* W3C standard */
+}
+/**
+ *
+ * =======================================================================
+	 Code Blocks
+ * =======================================================================
+ */
+pre code {
+  word-wrap: normal;
+  white-space: -moz-pre-wrap;
+  white-space: pre-wrap;
+}
+pre {
+  white-space: pre;
+}
+code {
+  white-space: pre;
+  font-family: monospace;
+}
+/**
+ *
+ * =======================================================================
+ * Abbreviations Markup
+ * Extend this object into your markup
+
+	<abbr title="hyper text markup language">HMTL</abbr>
+
+ * Extend this object into your markup.
+ * =======================================================================
+ */
+abbr {
+  font-variant: small-caps;
+  font-weight: 600;
+  text-transform: lowercase;
+  color: #808080;
+}
+abbr[title]:hover {
+  cursor: help;
+}
+/**
+ *
+ * =======================================================================
+	 Definition Lists
+ * =======================================================================
+ */
+.lining dt,
+.lining dd {
+  display: inline;
+  margin: 0;
+}
+.lining dt + dt:before,
+.lining dd + dt:before {
+  content: "\A";
+  white-space: pre;
+}
+.lining dd + dd:before {
+  content: ", ";
+}
+.lining dd:before {
+  content: ": ";
+  margin-left: -0.2em;
+}
+.dictionary-style dt {
+  display: inline;
+  counter-reset: definitions;
+}
+.dictionary-style dt + dt:before {
+  content: ", ";
+  margin-left: -0.2em;
+}
+.dictionary-style dd {
+  display: block;
+  counter-increment: definitions;
+}
+.dictionary-style dd:before {
+  content: counter(definitions, decimal) ". ";
+}
+/**
+ *
+ * =======================================================================
+	 Blockquotes
+ * =======================================================================
+ */
+.blockquote p:last-of-type {
+  margin-bottom: -0.825em;
+}
+.blockquote + figcaption {
+  display: block;
+  font-size: inherit;
+  text-align: right;
+}
+.blockquote + figcaption:before {
+  content: "-";
+  /* "-" is your citation flourish */
+}
+/**
+ *
+ * =======================================================================
+	 Pull Quotes
+ * =======================================================================
+ */
+.pull-quote {
+  position: relative;
+  padding: 1em;
+}
+.pull-quote:before,
+.pull-quote:after {
+  height: 1em;
+  opacity: 0.15;
+  position: absolute;
+  font-size: 4em;
+  color: #dc976e;
+}
+.pull-quote:before {
+  content: '“';
+  top: 0;
+  left: 0;
+}
+.pull-quote:after {
+  content: '”';
+  bottom: 0;
+  right: 0;
+}
+/*
+  Turquoise : #1abc9c
+  Green Sea : #16a085
+
+  Emerald   : #2ecc71
+  Nephritis : #27ae60
+
+  Peter River : #3498db
+  Belize Hole : #9890b9
+
+  Amethyst : #9b59b6
+  Wisteria : #8E44ad
+
+  Wet Asphalt   : #34495e
+  Midnight Blue : #2ce50
+
+  Sun Flower : #f1c40f
+  Orange     : #f39c12
+
+  Carrot  : #e67e22
+  Pumpkin : #d35400
+
+  Alizarin    : #e74c3c
+  Pomegranate : #c0392b
+
+  Clouds : #ecf0f1
+  Silver : #bdc3c7
+
+  Concrete : #95a5a6
+  Asbestos : #7f8c8d
+*/
+/* Forms */
+.gl-input-field {
+  display: "block";
+}
+form label {
+  font: 12px/12px 'Open Sans', sans-serif;
+  margin: 0 12px 0 0;
+  vertical-align: middle;
+}
+/* Lists */
+/* Tables */
+/* Buttons */
