@@ -1,0 +1,61 @@
+/*
+  Source LESS for Glacier. All other imported LESS styles are available separately.
+*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700,600);
+
+/* background settings */
+@bg:lightgrey;
+
+/* default typography */
+@dfont:'Open Sans',sans-serif;
+@dsize:100%;
+@dcolor:#444;
+
+
+/* header typography */
+@hfont:@dfont;
+@hcolor:#34495e;
+@h1size:60px;
+  @h1margin:9px;
+@h2size:48px;
+  @h2margin:11px;
+@h3size:36px;
+  @h3margin:15px;
+@h4size:24px;
+  @h4margin:22px;
+@h5size:21px;
+  @h5margin:25px;
+@h6size:18px;
+  @h6margin:30px;
+
+
+/* grid settings */
+@mobilecolumns:2;
+@mobilepadding: 0 0.5%;
+@mobilegutter_px: 0;
+@mobilegutter_pc: 1%;
+
+@tabletcolumns:10;
+@tabletpadding: 0 0.5%;
+@tabletgutter_px: 0;
+@tabletgutter_pc: 1%;
+
+@desktopcolumns:12;
+@desktoppadding: 0 0.5%;
+@desktopgutter_px: 0;
+@desktopgutter_pc: 1%;
+
+@hirescolumns:12;
+@hirespadding: 0 0.5%;
+@hiresgutter_px: 0;
+@hiresgutter_pc: 1%;
+
+/* other settings */
+
+@import "reset.less";
+@import "grid.less";
+@import "typography.less";
+@import "colors.less";
+@import "icons.less";
+@import "elements.less";
+@import "responsive.less";
