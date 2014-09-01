@@ -4,15 +4,14 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700,600);
 
 /* background settings */
-@bg:lightgrey;
+@bg:#ecf0f1;
 
-/* default typography */
+
+/* typography */
 @dfont:'Open Sans',sans-serif;
 @dsize:100%;
 @dcolor:#444;
 
-
-/* header typography */
 @hfont:@dfont;
 @hcolor:#34495e;
 @h1size:60px;
@@ -27,6 +26,12 @@
   @h5margin:25px;
 @h6size:18px;
   @h6margin:30px;
+
+@blockquotefont:@dfont;
+@blockquotepadding:0 20%;
+@blockquotefontsize:20px;
+@blockquotecolor:#95a5a6;
+@blockquoteweight:600;
 
 
 /* grid settings */
@@ -50,6 +55,22 @@
 @hiresgutter_px: 0;
 @hiresgutter_pc: 1%;
 
+
+/* layout settings */
+@padding:20px;
+
+
+/* input settings */
+@inputfont:@dsize solid @dfont;
+@inputpadding:3px 5px;
+@inputborder:1px solid #bdc3c7;
+@inputborderradius:4px;
+@labelfont:12px @dfont;
+
+@buttoncolor:;
+@buttonbackground:;
+@buttonborder:;
+
 /* other settings */
 
 @import "reset.less";
@@ -59,3 +80,4 @@
 @import "icons.less";
 @import "elements.less";
 @import "responsive.less";
+@import "project.less";
