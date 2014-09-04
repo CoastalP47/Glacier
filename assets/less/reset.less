@@ -50,13 +50,13 @@ table {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-.cf:before,
-.cf:after {
+.cf:before,.gl-row:before,
+.cf:after,.gl-row:after {
     content: " "; /* 1 */
     display: table; /* 2 */
 }
 
-.cf:after {
+.cf:after,.gl-row:after {
     clear: both;
 }
 
@@ -64,6 +64,6 @@ table {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-.cf {
+.cf,.gl-row {
     *zoom: 1;
 }

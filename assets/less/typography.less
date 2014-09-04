@@ -64,8 +64,8 @@ p + .drop-cap{
  * =======================================================================
  *
  */
-html{
-	font: normal @dsize/1.65 @dfont;
+html,body{
+	font: normal @dsize/1.45 @dfont;
 }
 body{
 	-webkit-hyphens: auto;
@@ -312,3 +312,5 @@ blockquote:before {color: #ccc;content: open-quote;font-size:@blockquotefontsize
 }
 
 hr{border:none;border-top:1px solid #ecf0f1;border-bottom:1px solid #bdc3c7;}
+*::selection {background:@scolor;color:#fff;}
+*::-moz-selection {background:@scolor;color:#fff;}

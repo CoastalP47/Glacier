@@ -5,7 +5,7 @@
 
 /* background settings */
 @bg:#ecf0f1;
-
+@scolor:#8e44ad;
 
 /* typography */
 @dfont:'Open Sans',sans-serif;
@@ -35,25 +35,19 @@
 
 
 /* grid settings */
-@mobilecolumns:2;
-@mobilepadding: 0 0.5%;
-@mobilegutter_px: 0;
-@mobilegutter_pc: 1%;
-
-@tabletcolumns:10;
+@columns:12;
+/* 479-779 */
 @tabletpadding: 0 0.5%;
-@tabletgutter_px: 0;
-@tabletgutter_pc: 1%;
-
-@desktopcolumns:12;
+@tabletgutter: 1%;
+/* 780-959 */
+@largepadding: 0 0.5%;
+@largegutter: 1%;
+/* 960-1199 */
 @desktoppadding: 0 0.5%;
-@desktopgutter_px: 0;
-@desktopgutter_pc: 1%;
-
-@hirescolumns:12;
+@desktopgutter: 1%;
+/* 1200+ */
 @hirespadding: 0 0.5%;
-@hiresgutter_px: 0;
-@hiresgutter_pc: 1%;
+@hiresgutter: 1%;
 
 
 /* layout settings */
@@ -75,8 +69,8 @@
 
 @import "reset.less";
 @import "grid.less";
-@import "typography.less";
 @import "colors.less";
+@import "typography.less";
 @import "icons.less";
 @import "elements.less";
 @import "responsive.less";
