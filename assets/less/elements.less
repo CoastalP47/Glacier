@@ -62,10 +62,10 @@ form{
   input[type="radio"]{-webkit-appearance:none;border:@inputborder;height:15px;width:15px;border-radius:14px;position:relative;}
     input[type="radio"]:before{height: 7px;width: 7px;background: #9b59b6;content: '';top: 3px;left: 3px;display: block;border-radius: 10px;position: absolute;display:none;}
       input[type="radio"]:checked:before{display:block;}
-    input[type="radio"].gl-fade:before{opacity:0;display:block;}
+    input[type="radio"].gl-fade:before{opacity:0;display:block;.anim}
       input[type="radio"].gl-fade:checked:before{opacity:1;}
-    input[type="radio"].gl-fade:before{transform:scale(0);display:block;}
-      input[type="radio"].gl-fade:checked:before{transform:scale(1);}
+    input[type="radio"].gl-scale:before{transform:scale(0);display:block;.anim}
+      input[type="radio"].gl-scale:checked:before{transform:scale(1);}
 
   input[type="checkbox"]{-webkit-appearance:none;border:@inputborder;height:15px;width:15px;border-radius:0px;position:relative;}
     input[type="checkbox"]:before{height: 7px;width: 7px;background: #9b59b6;content: '';top: 3px;left: 3px;display: block;position: absolute;display:none;}
@@ -82,6 +82,9 @@ form{
 
   .gl-input-range-result{display:inline-block;font:@inputfont;font-weight:bold;padding:0 10px;}
   .gl-range-min,.gl-range-max{display:inline-block;font:@inputfont;}
+
+  input.gl-input-error,textarea.gl-input-error{border:1px solid rgba(192, 57, 43,1.0);background:rgba(231, 76, 60,0.1);}
+  input.gl-input-success,.gl-input-success{border:1px solid rgba(39, 174, 96,1.0);background:rgba(46, 204, 113,0.1);}
 }
 /* Lists */
 ul{}
