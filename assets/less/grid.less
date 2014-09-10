@@ -1,3 +1,6 @@
+html,body{background:@bg;}
+.gutter{padding:@padding;}
+
 .mixin-col{
      border:0px solid rgba(0,0,0,0);
      float:left;
@@ -8,7 +11,7 @@
      -webkit-background-clip:padding-box !important;
      background-clip:padding-box !important;
 }
-.col{
+.gl-col{
      .mixin-col;
 }
 
@@ -16,14 +19,13 @@
     @one_col: (100% - (@gutter_pc * (@max_columns - 1))) / @max_columns;
     width:(@one_col * @num) + (@gutter_pc * (@num - 1));
     border-left-width:@gutter_px;
-    padding:@padding;
     margin-left:@gutter_pc;
 }
 .mixin-col_first{
     margin-left:0;
 }
 .generate-columns(@n, @i:1) when (@i =< @n){
-  .col_@{i}{
+  .gl-col_@{i}{
     .mixin-span(@i, @gutter_pc, @gutter_px, @padding, @max_columns);
   }
   .generate-columns(@n,(@i+1));
@@ -32,32 +34,25 @@
 
 @media screen and (min-width: 0px) and (max-width: 478px) {
   .container{width:95%;margin:0 auto;}
-  .col {
+  .gl-col {
       margin-left:1%;
       padding:0 0.5%;
+      width:100%;
   }
-  @max_columns: @mobilecolumns;
-  @padding: @mobilepadding;
-  @gutter_px: @mobilegutter_px;
-  @gutter_pc: @mobilegutter_pc;
 
-  .row .col:first-child{
-      .mixin-col_first;
-  }
-  .generate-columns(@max_columns);
 }
 
 @media screen and (min-width: 479px) and (max-width: 779px){
-  .container{width:500px;margin:0 auto;}
-  .col{
-      margin-left:1%;
-      padding:0 0.5%;
-  }
-  @max_columns: @tabletcolumns;
+  @max_columns: @columns;
   @padding: @tabletpadding;
-  @gutter_px: @tabletgutter_px;
-  @gutter_pc: @tabletgutter_pc;
-  .row .col:first-child{
+  @gutter_px: @tabletgutter;
+  @gutter_pc: @tabletgutter;
+  .container{width:500px;margin:0 auto;}
+  .gl-col{
+      margin-left:@gutter_px;
+      padding:@padding;
+  }
+  .gl-row .gl-col:first-child{
       .mixin-col_first;
   }
   .generate-columns(@max_columns);
@@ -65,47 +60,47 @@
 
 @media screen and (min-width: 780px) and (max-width: 959px){
   .container{width:790px;margin:0 auto;}
-    .col{
-        margin-left:1%;
-        padding:0 0.5%;
+    @max_columns: @columns;
+    @padding: @largepadding;
+    @gutter_px: @largegutter;
+    @gutter_pc: @largegutter;
+    .gl-col{
+        margin-left:@gutter_px;
+        padding:@padding;
     }
-    @max_columns: @desktopcolumns;
-    @padding: @desktoppadding;
-    @gutter_px: @desktopgutter_px;
-    @gutter_pc: @desktopgutter_pc;
-    .row .col:first-child{
+    .gl-row .gl-col:first-child{
         .mixin-col_first;
     }
     .generate-columns(@max_columns);
 }
 
 @media screen and (min-width: 960px) and (max-width: 1199px){
+  @max_columns: @columns;
+  @padding: @desktoppadding;
+  @gutter_px: @desktopgutter;
+  @gutter_pc: @desktopgutter;
   .container{width:1000px;margin:0 auto;}
-  .col {
-      margin-left:1%;
-      padding:0 0.5%;
+  .gl-col {
+      margin-left:@gutter_px;
+      padding:@padding;
   }
-  @max_columns: @hirescolumns;
-  @padding: @hirespadding;
-  @gutter_px: @hiresgutter_px;
-  @gutter_pc: @hiresgutter_pc;
-  .row .col:first-child{
+  .gl-row .gl-col:first-child{
       .mixin-col_first;
   }
   .generate-columns(@max_columns);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px){
+  @max_columns: @columns;
+  @padding: @hirespadding;
+  @gutter_px: @hiresgutter;
+  @gutter_pc: @hiresgutter;
   .container{width:1200px;margin:0 auto;}
-  .col {
-      margin-left:1%;
-      padding:0 0.5%;
+  .gl-col {
+      margin-left:@gutter_px;
+      padding:@padding;
   }
-  @max_columns: 12;
-  @padding: 0 0.5%;
-  @gutter_px: 0;
-  @gutter_pc: 1%;
-  .row .col:first-child{
+  .gl-row .gl-col:first-child{
       .mixin-col_first;
   }
   .generate-columns(@max_columns);

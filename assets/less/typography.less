@@ -64,8 +64,8 @@ p + .drop-cap{
  * =======================================================================
  *
  */
-html{
-	font: normal @dsize/1.65 @dfont;
+html,body{
+	font: normal @dsize/1.45 @dfont;
 }
 body{
 	-webkit-hyphens: auto;
@@ -172,6 +172,8 @@ h6,
 p{
 	margin: auto auto 1.5em; /* bottom margin for paragraphs */
 }
+strong{font-weight:bold;}
+em{font-style:italic;}
 /**
  *
  * =======================================================================
@@ -280,19 +282,8 @@ abbr[title]:hover{
 	 Blockquotes
  * =======================================================================
  */
-.blockquote p:last-of-type{
-	margin-bottom: -0.825em;
-}
-
-.blockquote + figcaption{
-	display: block;
-	font-size: inherit;
-	text-align: right;
-}
-
-.blockquote + figcaption:before{
-	content: "-"; /* "-" is your citation flourish */
-}
+blockquote{font:@blockquotefontsize @blockquotefont;color:@blockquotecolor;padding:@blockquotepadding;display:block;line-height:@blockquotefontsize * 1.25;font-weight:@blockquoteweight;quotes: "\201C""\201D""\2018""\2019";}
+blockquote:before {color: #ccc;content: open-quote;font-size:@blockquotefontsize*2.25;line-height: 0.1em;margin-right: 0.25em;vertical-align: -0.4em;}
 /**
  *
  * =======================================================================
@@ -321,3 +312,7 @@ abbr[title]:hover{
 	bottom: 0;
 	right: 0;
 }
+
+hr{border:none;border-top:1px solid #ecf0f1;border-bottom:1px solid #bdc3c7;}
+*::selection {background:@scolor;color:#fff;}
+*::-moz-selection {background:@scolor;color:#fff;}
