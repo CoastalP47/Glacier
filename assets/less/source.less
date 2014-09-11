@@ -7,13 +7,17 @@
 @bg:#ecf0f1;
 @scolor:#8e44ad;
 
+@primaryColor:rgba(142, 68, 173,1.0);
+@secondaryColor:rgba(155, 89, 182,1.0);
+@tertiaryColor:rgba(52, 73, 94,1.0);
+
 /* typography */
 @dfont:'Open Sans',sans-serif;
 @dsize:100%;
 @dcolor:#444;
 
 @hfont:@dfont;
-@hcolor:#34495e;
+@hcolor:@tertiaryColor;
 @h1size:60px;
   @h1margin:9px;
 @h2size:48px;
@@ -61,11 +65,12 @@
 @inputborderradius:4px;
 @labelfont:12px @dfont;
 
-@buttoncolor:;
-@buttonbackground:;
-@buttonborder:;
+@buttoncolor:rgba(236, 240, 241,1.0);
+@buttonbackground:@primaryColor;
+@buttonborder:1px solid @secondaryColor;
 
 /* other settings */
+.anim{transition:.1s linear all;}
 
 @import "reset.less";
 @import "grid.less";

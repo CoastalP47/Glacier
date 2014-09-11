@@ -9,7 +9,7 @@
   <script src="assets/js/glacier.js"></script>
 </head>
 <body>
-  <header>
+  <header id="gl-header">
     <div class="container cf">
       <div class="gutter cf">
         <div id="logo"><img src="http://placehold.it/100x50"/></div>
@@ -136,7 +136,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="gl-content">
     <div class="container cf">
       <div class="gl-row">
         <div class="gutter">
@@ -167,6 +167,21 @@
               <h6>Heading 6</h6>
               <p>Paragraph text with a <a href="#">Link!</a>, some <strong>bold</strong> and some <em>italics</em></p>
               <blockquote>What's going on with blockquotes? Look right here and see!</blockquote>
+              <p>Here is an anchor with the <code>.gl-slide</code> effect: <a title="gl-slide" class="gl-slide" href="#"><span>gl-slide</span></a></p>
+              <p>Here is an anchor with the <code>.gl-3d</code> effect: <a title="gl-3d" class="gl-3d" href="#"><span>gl-3d</span></a></p>
+              <p>Lists look especially nice too, with subtle highlighting on the hover to bring some simple attention</p>
+              <ul>
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+              </ul>
+              <ol>
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+              </ol>
             </section>
             <hr>
             <section class="gl-section">
@@ -237,14 +252,14 @@
                   <label for="gl-input-reset">reset</label><input type="reset" id="gl-input-reset"/>
                   <label for="gl-input-submit">submit</label><input type="submit" id="gl-input-reset"/>
                 </div>
-                <h2>Form Validation</h2>
+                <h3>Form Validation</h3>
                 <div class="gl-form-field">
                   <label for="gl-input-text">Text input (success)</label><input type="text" id="gl-input-text" class="gl-input-success"/>
                 </div>
                 <div class="gl-form-field">
                   <label for="gl-input-text">Text input (error)</label><input type="text" id="gl-input-text" class="gl-input-error"/>
                 </div>
-                <h2>Form Effects</h2>
+                <h3>Form Effects</h3>
                 <p>Form effects can be applied to checkbox and radio buttons to spruce them up.</p>
                 <div class="gl-form-field">
                   <label for="gl-input-checkbox">Checkbox (gl-fade)</label><input type="checkbox" id="gl-input-checkbox" class="gl-fade"/>
@@ -261,7 +276,7 @@
     </div>
   </section>
 
-  <footer>
+  <footer id="gl-footer">
     <div class="container cf">
       footer
     </div>
