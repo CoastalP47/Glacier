@@ -42,12 +42,12 @@ html,body{background:@bg;}
 
 }
 
-@media screen and (min-width: 479px) and (max-width: 779px){
+@media screen and (min-width: 479px) and (max-width: 767px){
   @max_columns: @columns;
   @padding: @tabletpadding;
   @gutter_px: @tabletgutter;
   @gutter_pc: @tabletgutter;
-  .container{width:500px;margin:0 auto;}
+  .container{width:95%;margin:0 auto;}
   .gl-col{
       margin-left:@gutter_px;
       padding:@padding;
@@ -58,8 +58,8 @@ html,body{background:@bg;}
   .generate-columns(@max_columns);
 }
 
-@media screen and (min-width: 780px) and (max-width: 959px){
-  .container{width:790px;margin:0 auto;}
+@media screen and (min-width: 768px) and (max-width: 959px){
+  .container{width:768px;margin:0 auto;}
     @max_columns: @columns;
     @padding: @largepadding;
     @gutter_px: @largegutter;
