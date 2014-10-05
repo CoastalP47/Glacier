@@ -1,5 +1,8 @@
+.anim{
+  transition:0.1s linear all;
+}
+
 /* Forms */
-.gl-form-field{padding:10px 0;}
 .gl-input-field{display:"block";}
 form{
   input[type="text"],
@@ -79,8 +82,7 @@ form{
 
   label{font:12px/12px @dfont;margin:0 12px 0 0;vertical-align:middle;}
   textarea{}
-
-  button,input[type="reset"],input[type="submit"]{color:@buttoncolor;background:@buttonbackground;border:@buttonborder;padding:@buttonpadding;border-radius:@inputborderradius;.buttonsettings;.anim;
+    button,input[type="reset"],input[type="submit"]{color:@buttoncolor;background:@buttonbackground;border:@buttonborder;padding:@buttonpadding;border-radius:@inputborderradius;.buttonsettings;.anim;
     &:hover{cursor:pointer;opacity:0.7;}
   }
 
@@ -94,10 +96,6 @@ form{
     &:focus{background:rgba(46, 204, 113,0.05);border:1px solid rgba(39, 174, 96,0.5);}
   }
 }
-/* Lists */
-ul{}
-ol{}
-li{}
 
 /* Tables */
 table{}
@@ -109,5 +107,35 @@ table{}
   tfoot{}
     tfoot th{}
 
-/* Buttons */
-button{}
+
+/* Images */
+.gl-img_left{float:left;margin:0 20px 20px 0;}
+.gl-img_center{margin:0 auto;}
+.gl-img_right{float:right;margin:0 0 20px 20px;}
+
+
+/* Positioning */
+.gl-pos_left{float:left;}
+.gl-pos_center{margin:0 auto;}
+.gl-pos_right{float:right;}
+
+.gl-text_left{text-align:left;}
+.gl-text_center{text-align:middle;}
+.gl-text_right{text-align:right;}
+
+
+/* Subnav */
+ul.gl-sidebar{display:block;list-style-type:none;
+  *:before{display:none;}
+  ul,li,a{display:block;margin:0;padding:0;list-style-type:none;}
+  a{padding:15px 20px;}
+  > li{background:@primaryColor;
+    > a{color:#fff;}
+    > ul{
+      li{background:@secondaryColor;
+        a{color:#fff;}
+      }
+    }
+  }
+
+}
