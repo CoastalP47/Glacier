@@ -1,1 +1,1 @@
-jQuery(document).ready(function(){console.log("here we go!")});
+jQuery(document).ready(function(a){function b(b){$val=a(b).val(),a(b).siblings(".gl-input-range-result").html($val)}console.log("here we go!"),a('input[type="range"]').each(function(){b(a(this))}),a(document).on("change mousemove",'input[type="range"]',function(){b(a(this))})});

@@ -1,0 +1,136 @@
+html,body{background:@bg;}
+.gutter{padding:@padding;}
+
+.mixin-col{
+     border:0px solid rgba(0,0,0,0);
+     float:left;
+     -webkit-box-sizing:border-box;
+     -moz-box-sizing:border-box;
+     box-sizing:border-box;
+     -moz-background-clip:padding-box !important;
+     -webkit-background-clip:padding-box !important;
+     background-clip:padding-box !important;
+}
+.gl-col{
+     .mixin-col;
+}
+
+
+.mixin-span(@num, @gutter_pc, @gutter_px, @padding, @max_columns) {
+    @one_col: (100% - (@gutter_pc * (@max_columns - 1))) / @max_columns;
+    width:(@one_col * @num) + (@gutter_pc * (@num - 1));
+    border-left-width:@gutter_px;
+    margin-left:@gutter_pc;
+}
+.mixin-col_first{
+    margin-left:0;
+}
+.generate-columns(@n, @i:1) when (@i =< @n){
+  .gl-col_@{i}{
+    .mixin-span(@i, @gutter_pc, @gutter_px, @padding, @max_columns);
+  }
+  .generate-columns(@n,(@i+1));
+}
+
+
+
+.mixin-span-px(@num, @gutter_pix, @padding, @max_columns, @resolution) {
+    @one_col: (@resolution - (@gutter_pix * (@max_columns - 1))) / @max_columns;
+    width:(@one_col * @num) + (@gutter_pix * (@num - 1));
+    margin-left:@gutter_pix;
+}
+.generate-columns-px(@n, @i:1) when (@i =< @n){
+  .gl-col-px_@{i}{
+    .mixin-span-px(@i, @gutter_pix, @padding, @max_columns, @resolution);
+  }
+  .generate-columns-px(@n,(@i+1));
+}
+
+
+
+
+
+@media screen and (min-width: 0px) and (max-width: 478px) {
+  .container{width:95%;margin:0 auto;}
+  .gl-col {
+      margin-left:0;
+      padding:@padding;
+      width:100%;
+  }
+}
+
+@media screen and (min-width: 479px) and (max-width: 767px){
+  @max_columns: @columns;
+  @padding: @tabletpadding;
+  @gutter_px: @tabletgutter;
+  @gutter_pix:10px;
+  @gutter_pc: @tabletgutter;
+  @resolution:100%;
+  .container{width:95%;margin:0 auto;}
+  .gl-col{
+      margin-left:@gutter_px;
+      padding:@padding;
+  }
+  .gl-row .gl-col:first-child{
+      .mixin-col_first;
+  }
+  .generate-columns(@max_columns);
+  .generate-columns-px(@max_columns);
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px){
+  .container{width:768px;margin:0 auto;}
+    @resolution:768px;
+    @max_columns: @columns;
+    @padding: @largepadding;
+    @gutter_px: @largegutter;
+    @gutter_pix:10px;
+    @gutter_pc: @largegutter;
+    .gl-col{
+        margin-left:@gutter_px;
+        padding:@padding;
+    }
+    .gl-row .gl-col:first-child{
+        .mixin-col_first;
+    }
+    .generate-columns(@max_columns);
+    .generate-columns-px(@max_columns);
+}
+
+@media screen and (min-width: 960px) and (max-width: 1199px){
+  @max_columns: @columns;
+  @padding: @desktoppadding;
+  @gutter_px: @desktopgutter;
+  @gutter_pix:10px;
+  @gutter_pc: @desktopgutter;
+  @resolution:1000px;
+  .container{width:1000px;margin:0 auto;}
+  .gl-col {
+      margin-left:@gutter_px;
+      padding:@padding;
+  }
+  .gl-row .gl-col:first-child{
+      .mixin-col_first;
+  }
+  .generate-columns(@max_columns);
+  .generate-columns-px(@max_columns);
+}
+
+@media screen and (min-width: 1200px){
+  @max_columns: @columns;
+  @padding: @hirespadding;
+  @gutter_px: @hiresgutter;
+  @gutter_pix:10px;
+  @gutter_pc: @hiresgutter;
+  @resolution:1200px;
+  .container{width:1200px;margin:0 auto;}
+  .gl-col {
+      margin-left:@gutter_px;
+      padding:@padding;
+  }
+  .gl-row .gl-col:first-child{
+      .mixin-col_first;
+  }
+  .generate-columns(@max_columns);
+  .generate-columns-px(@max_columns);
+}

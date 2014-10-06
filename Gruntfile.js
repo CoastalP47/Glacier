@@ -50,6 +50,10 @@ module.exports = function (grunt) {
         files: ['assets/prod/glacier.css'],
         tasks: ['cssmin']
       },
+      jsconcat:{
+        files:['assets/js/*.js'],
+        tasks:['concat']
+      },
       jsuglify:{
         files: ['assets/js/*.js'],
         tasks: ['uglify']
