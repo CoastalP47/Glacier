@@ -9,7 +9,7 @@
   <script src="assets/js/glacier.js"></script>
 </head>
 <body>
-  <header>
+  <header id="gl-header">
     <div class="container cf">
       <div class="gutter cf">
         <div id="logo"><img src="http://placehold.it/100x50"/></div>
@@ -39,7 +39,7 @@
       </div>
       <!-- 6 col -->
       <div class="gl-row">
-        <div class="gl-col gl-col_6">
+        <div class="gl-col gl-col-px_6">
             6 column
         </div>
         <div class="gl-col gl-col_6">
@@ -136,12 +136,11 @@
     </div>
   </section>
 
-  <section>
+  <section id="gl-content">
     <div class="container cf">
       <div class="gl-row">
-        <div class="gutter">
           <div class="gl-col gl-col_4">
-            <ul class="gl-sidebar-dropdown">
+            <ul class="gl-sidebar gl-sidebar-dropdown">
               <li><a href="#">Sidebar Item 1</a></li>
               <li><a href="#">Sidebar Item 2</a></li>
               <li><a href="#">Sidebar Item 3</a></li>
@@ -167,85 +166,233 @@
               <h6>Heading 6</h6>
               <p>Paragraph text with a <a href="#">Link!</a>, some <strong>bold</strong> and some <em>italics</em></p>
               <blockquote>What's going on with blockquotes? Look right here and see!</blockquote>
+              <p>Here is an anchor with the <code>.gl-slide</code> effect: <a title="gl-slide" class="gl-slide" href="#"><span>gl-slide</span></a></p>
+              <p>Here is an anchor with the <code>.gl-3d</code> effect: <a title="gl-3d" class="gl-3d" href="#"><span>gl-3d</span></a></p>
+              <p>Lists look especially nice too, with subtle highlighting on the hover to bring some simple attention</p>
+              <ul>
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+              </ul>
+              <ol>
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+              </ol>
             </section>
             <hr>
             <section class="gl-section">
               <h1>Forms</h1>
               <form>
-                <div class="gl-form-field">
-                  <label for="gl-input-text">Text input</label><input type="text" id="gl-input-text" />
+                <div class="gl-form-field cf">
+                  <div class="gl-col gl-col_2">
+                    <label for="gl-input-text">Text input</label>
+                  </div>
+                  <div class="gl-col gl-col_10">
+                    <input type="text" id="gl-input-text" />
+                  </div>
                 </div>
-                <div class="gl-form-field">
-                  <label for="gl-input-checkbox">Checkbox</label><input type="checkbox" id="gl-input-checkbox" />
+                <div class="gl-form-field cf">
+                  <div class="gl-col gl-col_2">
+                    <label for="gl-input-checkbox">Checkbox</label>
+                  </div>
+                  <div class="gl-col gl-col_10">
+                    <input type="checkbox" id="gl-input-checkbox"/>
+                  </div>
                 </div>
-                <div class="gl-form-field">
-                  <label for="gl-input-color">Color</label><input type="color" id="gl-input-color" />
+                <div class="gl-form-field cf">
+                  <div class="gl-col gl-col_2">
+                    <label for="gl-input-color">Color</label>
+                  </div>
+                  <div class="gl-col gl-col_10">
+                    <input type="color" id="gl-input-color" />
+                  </div>
                 </div>
-                <div class="gl-form-field">
-                  <label for="gl-input-date">Date</label><input type="date" id="gl-input-date" />
+                <div class="gl-form-field cf">
+                  <div class="gl-col gl-col_2">
+                    <label for="gl-input-date">Date</label>
+                  </div>
+                  <div class="gl-col gl-col_10">
+                    <input type="date" id="gl-input-date" />
+                  </div>
                 </div>
-                <div class="gl-form-field">
-                  <label for="gl-input-email">Email</label><input type="email" id="gl-input-email" />
+                <div class="gl-form-field cf">
+                  <div class="gl-col gl-col_2">
+                    <label for="gl-input-email">Email</label>
+                  </div>
+                  <div class="gl-col gl-col_10">
+                    <input type="email" id="gl-input-email" />
+                  </div>
                 </div>
-                <div class="gl-form-field">
-                  <label for="gl-input-file">File</label><input type="file" id="gl-input-file" />
+                <div class="gl-form-field cf">
+                  <div class="gl-col gl-col_2">
+                    <label for="gl-input-file">File</label>
+                  </div>
+                  <div class="gl-col gl-col_10">
+                    <input type="file" id="gl-input-file" />
+                  </div>
                 </div>
-                <div class="gl-form-field">
-                  <label for="gl-input-month">Month</label><input type="month" id="gl-input-month" />
+                <div class="gl-form-field cf">
+                  <div class="gl-col gl-col_2">
+                    <label for="gl-input-month">Month</label>
+                  </div>
+                  <div class="gl-col gl-col_10">
+                    <input type="month" id="gl-input-month" />
+                  </div>
                 </div>
-                <div class="gl-form-field">
-                  <label for="gl-input-number">Number</label><input type="number" id="gl-input-number" />
+                <div class="gl-form-field cf">
+                  <div class="gl-col gl-col_2">
+                    <label for="gl-input-number">Number</label>
+                  </div>
+                  <div class="gl-col gl-col_10">
+                    <input type="number" id="gl-input-number" />
+                  </div>
                 </div>
-                <div class="gl-form-field">
-                  <label for="gl-input-password">Password</label><input type="password" id="gl-input-password" />
+                <div class="gl-form-field cf">
+                  <div class="gl-col gl-col_2">
+                    <label for="gl-input-password">Password</label>
+                  </div>
+                  <div class="gl-col gl-col_10">
+                    <input type="password" id="gl-input-password" />
+                  </div>
                 </div>
-                <div class="gl-form-field">
-                  <label for="gl-input-radio">Radio</label><input type="radio" id="gl-input-radio" />
+                <div class="gl-form-field cf">
+                  <div class="gl-col gl-col_2">
+                    <label for="gl-input-radio">Radio</label>
+                  </div>
+                  <div class="gl-col gl-col_10">
+                    <input type="radio" id="gl-input-radio"/>
+                  </div>
                 </div>
-                <div class="gl-form-field">
-                  <label for="gl-input-range">Range</label><span class="gl-range-min">1</span><input type="range" id="gl-input-range" min="1" max="10" /><span class="gl-range-max">10</span><div class="gl-input-range-result"></div>
+                <div class="gl-form-field cf">
+                  <div class="gl-col gl-col_2">
+                    <label for="gl-input-range">Range</label>
+                  </div>
+                  <div class="gl-col gl-col_10">
+                    <span class="gl-range-min">1</span>
+                    <input type="range" id="gl-input-range" min="1" max="10" />
+                    <span class="gl-range-max">10</span>
+                    <div class="gl-input-range-result"></div>
+                  </div>
                 </div>
-                <div class="gl-form-field">
-                  <label for="gl-input-search">Search</label><input type="search" id="gl-input-search" />
+                <div class="gl-form-field cf">
+                  <div class="gl-col gl-col_2">
+                    <label for="gl-input-search">Search</label>
+                  </div>
+                  <div class="gl-col gl-col_10">
+                    <input type="search" id="gl-input-search" />
+                  </div>
                 </div>
-                <div class="gl-form-field">
-                  <label for="gl-input-tel">Tel</label><input type="tel" id="gl-input-tel" />
+                <div class="gl-form-field cf">
+                  <div class="gl-col gl-col_2">
+                    <label for="gl-input-tel">Tel</label>
+                  </div>
+                  <div class="gl-col gl-col_10">
+                    <input type="tel" id="gl-input-tel" />
+                  </div>
                 </div>
-                <div class="gl-form-field">
-                  <label for="gl-input-time">Time</label><input type="time" id="gl-input-time" />
+                <div class="gl-form-field cf">
+                  <div class="gl-col gl-col_2">
+                    <label for="gl-input-time">Time</label>
+                  </div>
+                  <div class="gl-col gl-col_10">
+                    <input type="time" id="gl-input-time" />
+                  </div>
                 </div>
-                <div class="gl-form-field">
-                  <label for="gl-input-url">Url</label><input type="url" id="gl-input-url" />
+                <div class="gl-form-field cf">
+                  <div class="gl-col gl-col_2">
+                    <label for="gl-input-url">Url</label>
+                  </div>
+                  <div class="gl-col gl-col_10">
+                    <input type="url" id="gl-input-url" />
+                  </div>
                 </div>
-                <div class="gl-form-field">
-                  <label for="gl-input-week">Week</label><input type="week" id="gl-input-week" />
+                <div class="gl-form-field cf">
+                  <div class="gl-col gl-col_2">
+                    <label for="gl-input-week">Week</label>
+                  </div>
+                  <div class="gl-col gl-col_10">
+                    <input type="week" id="gl-inpu-week" />
+                  </div>
                 </div>
-                <div class="gl-form-field">
-                  <label for="gl-input-select">Week</label>
-                  <select id="gl-input-select">
-                    <option value="">Choose a Glacier</option>
-                    <option value="">Exit</option>
-                    <option value="">Portage</option>
-                    <option value="">Kenai</option>
-                    <option value="">Matanuska</option>
-                  </select>
+                <div class="gl-form-field cf">
+                  <div class="gl-col gl-col_2">
+                    <label for="gl-input-select">Select</label>
+                  </div>
+                  <div class="gl-col gl-col_10">
+                    <select id="gl-input-select">
+                      <option value="">Choose a Glacier</option>
+                      <option value="">Exit</option>
+                      <option value="">Portage</option>
+                      <option value="">Kenai</option>
+                      <option value="">Matanuska</option>
+                    </select>
+                  </div>
                 </div>
-                <div class="gl-form-field">
-                  <label for="gl-input-textarea">Textarea</label><textarea id="gl-input-textarea" placeholder="placeholders look like this"></textarea>
+                <div class="gl-form-field cf">
+                  <div class="gl-col gl-col_2">
+                    <label for="gl-input-textarea">Textarea</label>
+                  </div>
+                  <div class="gl-col gl-col_10">
+                    <textarea id="gl-input-textarea" placeholder="placeholders look like this"></textarea>
+                  </div>
                 </div>
-                <div class="gl-form-field">
-                  <label for="gl-input-reset">reset</label><input type="reset" id="gl-input-reset"/>
-                  <label for="gl-input-submit">submit</label><input type="submit" id="gl-input-reset"/>
+                <div class="gl-form-field cf">
+                  <div class="gl-row">
+                    <div class="gl-col gl-col_2">
+                      <label for="gl-input-reset">reset</label>
+                    </div>
+                    <div class="gl-col gl-col_10">
+                      <input type="reset" id="gl-input-reset"/>
+                    </div>
+                  </div>
+                  <div class="gl-row">
+                    <div class="gl-col gl-col_2">
+                      <label for="gl-input-submit">submit</label>
+                    </div>
+                    <div class="gl-col gl-col_10">
+                      <input type="submit" id="gl-input-reset"/>
+                    </div>
+                  </div>
+                </div>
+                <h3>Form Validation</h3>
+                <div class="gl-form-field cf">
+                  <div class="gl-col gl-col_2">
+                    <label for="gl-input-text">Text input (success)</label>
+                  </div>
+                  <div class="gl-col gl-col_10">
+                    <input type="text" id="gl-input-text" class="gl-input-success"/>
+                  </div>
+                </div>
+                <div class="gl-form-field cf">
+                  <div class="gl-col gl-col_2">
+                    <label for="gl-input-text">Text input (error)</label>
+                  </div>
+                  <div class="gl-col gl-col_10">
+                    <input type="text" id="gl-input-text" class="gl-input-error"/>
+                  </div>
+                </div>
+                <h3>Form Effects</h3>
+                <p>Form effects can be applied to checkbox and radio buttons to spruce them up.</p>
+                <div class="gl-form-field cf">
+                  <label for="gl-input-checkbox">Checkbox (gl-fade)</label>
+                  <input type="checkbox" id="gl-input-checkbox" class="gl-fade"/>
+                </div>
+                <div class="gl-form-field cf">
+                  <label for="gl-input-checkbox">Checkbox (gl-scale)</label>
+                  <input type="checkbox" id="gl-input-checkbox" class="gl-scale"/>
+                </div>
               </form>
             </section>
           </div>
-        </div>
       </div>
 
     </div>
   </section>
 
-  <footer>
+  <footer id="gl-footer">
     <div class="container cf">
       footer
     </div>
