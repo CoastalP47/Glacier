@@ -1,0 +1,17 @@
+{
+  "name": "Glacier",
+  "version": "0.1",
+  "homepage": "https://github.com/CoastalP47/Glacier",
+  "authors": [
+    "Pat Eason <patrick@pateason.com>"
+  ],
+  "description": "A simple LESS responsive framework for quick and dirty projects.",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
