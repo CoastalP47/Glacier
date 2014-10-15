@@ -1,0 +1,97 @@
+
+@media screen and (min-width: 0px) and (max-width: 478px) {
+  .container{width:95%;margin:0 auto;}
+  .gl-col {
+      margin-left:0;
+      padding:@padding;
+      width:100%;
+  }
+}
+
+@media screen and (min-width: @res4-start) and (max-width: @res4-end){
+  @max_columns: @columns;
+  @padding: @tabletpadding;
+  @gutter_px: @tabletgutter;
+  @gutter_pix:10px;
+  @gutter_pc: @tabletgutter;
+  @resolution:100%;
+  .container{width:95%;margin:0 auto;}
+  .gl-col{
+      margin-left:@gutter_px;
+      padding:@padding;
+  }
+  .gl-row .gl-col:first-child{
+      .mixin-col_first;
+  }
+  .gl-row .gl-col:last-child{
+      .mixin-col_last;
+  }
+  .generate-columns(@max_columns);
+  .generate-columns-px(@max_columns);
+}
+
+@media screen and (min-width: @res3-start) and (max-width: @res3-end){
+    @resolution:@res3-cont;
+    @max_columns: @columns;
+    @padding: @largepadding;
+    @gutter_px: @largegutter;
+    @gutter_pix:10px;
+    @gutter_pc: @largegutter;
+    .container{width:@res3-cont;margin:0 auto;}
+    .gl-col{
+        margin-left:@gutter_px;
+        padding:@padding;
+    }
+    .gl-row .gl-col:first-child{
+        .mixin-col_first;
+    }
+    .gl-row .gl-col:last-child{
+        .mixin-col_last;
+    }
+    .generate-columns(@max_columns);
+    .generate-columns-px(@max_columns);
+}
+
+@media screen and (min-width: @res2-start) and (max-width: @res2-end){
+  @max_columns: @columns;
+  @padding: @desktoppadding;
+  @gutter_px: @desktopgutter;
+  @gutter_pix:10px;
+  @gutter_pc: @desktopgutter;
+  @resolution:@res2-cont;
+  .container{width:@res2-cont;margin:0 auto;}
+  .gl-col {
+      margin-left:@gutter_px;
+      padding:@padding;
+  }
+  .gl-row .gl-col:first-child{
+      .mixin-col_first;
+  }
+  .gl-row .gl-col:last-child{
+      .mixin-col_last;
+  }
+  .generate-columns(@max_columns);
+  .generate-columns-px(@max_columns);
+}
+
+@media screen and (min-width: @res1){
+  @max_columns: @columns;
+  @padding: @hirespadding;
+  @gutter_px: @hiresgutter;
+  @gutter_pix:10px;
+  @gutter_pc: @hiresgutter;
+  @resolution:@res1;
+  .container{width:@res1;margin:0 auto;}
+  .gl-col {
+      margin-left:@gutter_px;
+      padding:@padding;
+  }
+  .gl-row .gl-col:first-child{
+      .mixin-col_first;
+  }
+  .gl-row .gl-col:last-child{
+      .mixin-col_last;
+  }
+  .generate-columns(@max_columns);
+  .generate-columns-px(@max_columns);
+}
