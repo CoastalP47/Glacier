@@ -12,24 +12,62 @@
 @tertiaryColor:rgba(52, 73, 94,1.0);
 
 /* typography */
+/* typography */
 @dfont:'Open Sans',sans-serif;
 @dsize:100%;
-@dcolor:#444;
+@dline-height:1.65;
+@dcolor:#000;
 
 @hfont:@dfont;
 @hcolor:@tertiaryColor;
 @h1size:60px;
   @h1margin:9px;
+  @h1line-height:64px;
+  @h1letter-spacing:0.1em;
+  @h1font:@dfont;
+  @h1color:@hcolor;
+
 @h2size:48px;
   @h2margin:11px;
+  @h2line-height:50px;
+  @h2letter-spacing:0.15em;
+  @h2font:@dfont;
+  @h2color:@hcolor;
+
 @h3size:36px;
-  @h3margin:15px;
+  @h3margin:16px;
+  @h3line-height:38px;
+  @h3letter-spacing:0.025em;
+  @h3font:@hfont;
+  @h3color:@hcolor;
+
 @h4size:24px;
   @h4margin:22px;
+  @h4line-height:26px;
+  @h4letter-spacing:0.1em;
+  @h4font:@hfont;
+  @h4color:@hcolor;
+
 @h5size:21px;
   @h5margin:25px;
+  @h5line-height:23px;
+  @h5letter-spacing:0.1em;
+  @h5font:@hfont;
+  @h5color:@hcolor;
+
 @h6size:18px;
   @h6margin:30px;
+  @h6line-height:20px;
+  @h6letter-spacing:0.1em;
+  @h6font:@hfont;
+  @h6color:@hcolor;
+
+@anchorcolor:#4d4845;
+@anchorfont:@dfont;
+@anchorletter-spacing:0.025em;
+@anchorfont-size:16px;
+@anchorline-height:22px;
+  @anchorcolor-hover:#878483;
 
 @blockquotefont:@dfont;
 @blockquotepadding:0 20%;
@@ -40,22 +78,36 @@
 
 /* grid settings */
 @columns:12;
-/* 479-767 */
-@tabletpadding: 0 0.5%;
-@tabletgutter: 1%;
-@tabletgutter_px:10px;
-/* 768-959 */
-@largepadding: 0 0.5%;
-@largegutter: 1%;
-@largetgutter_px:10px;
-/* 960-1199 */
-@desktoppadding: 0 0.5%;
-@desktopgutter: 1%;
-@desktopgutter_px:10px;
-/* 1200+ */
-@hirespadding: 0 0.5%;
-@hiresgutter: 1%;
-@hiresgutter_px:10px;
+
+  /* 479-767 */
+  @res4-end:767px;
+  @res4-start:479px;
+  @tabletpadding: 0 0.5%;
+  @tabletgutter: 1%;
+  @tabletgutter_px:10px;
+
+  /* 768-959 */
+  @res3-end:959px;
+  @res3-start:768px;
+  @res3-cont:768px;
+  @largepadding: 0 0.5%;
+  @largegutter: 1%;
+  @largetgutter_px:10px;
+
+  /* 960-1199 */
+  @res2-end:1199px;
+  @res2-start:960px;
+  @res2-cont:960px;
+  @desktoppadding: 0 0.5%;
+  @desktopgutter: 1%;
+  @desktopgutter_px:10px;
+
+  /* 1200+ */
+  @res1:1200px;
+  @res1-cont:1200px;
+  @hirespadding: 0 0.5%;
+  @hiresgutter: 1%;
+  @hiresgutter_px:10px;
 
 
 /* layout settings */

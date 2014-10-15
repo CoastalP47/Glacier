@@ -13,7 +13,7 @@
     <div class="container cf">
       <div class="gutter cf">
         <div id="logo"><img src="http://placehold.it/100x50"/></div>
-        <div id="tagline">A LESS framework for simple projects</div>
+        <div id="tagline">v0.5 - Cheechako</div>
       </div>
     </div>
   </header>
@@ -29,7 +29,15 @@
       <!-- grid intro -->
       <div class="gl-row">
         <h2>The Grid</h2>
-        <p>Glacier includes a robust, completely controllable LESS grid generator. This particular grid is generated for 12 columns with 0.5% horizontal padding. These values can be easily changed in the source.less variables.</p>
+        <p>Glacier includes a robust, completely controllable LESS grid generator that generates two grids: the <code>.gl-col_X</code> grid that is based entirely around percetange based column widths. This allows you to create grids within grids without limits. In other words, every parent has a grid that you define, and every instance of <code>.gl-col_X</code> will assimilate to that parent.</p>
+        <p>The other, more traditional pixel based grid, <code>.gl-col-px_X</code> takes your defined container and columns and renders pixel specific column widths.</p>
+        <p>The base grid included with Glacier is based on a 12 column, 0.5%, 10px padded layout.</p>
+        <p>*<em>DO NOT intermix px and pc, hopefully you already knew this. AND pixel widths don't play ncie with fluid layouts. Hopefully you already knew this as well.</em></p>
+      </div>
+
+      <!-- Percentage Grid !-->
+      <div class="gl-row">
+        <h3>The Percentage Grid</h3>
       </div>
       <!-- 12 col -->
       <div class="gl-row">
@@ -39,7 +47,7 @@
       </div>
       <!-- 6 col -->
       <div class="gl-row">
-        <div class="gl-col gl-col-px_6">
+        <div class="gl-col gl-col_6">
             6 column
         </div>
         <div class="gl-col gl-col_6">
@@ -133,6 +141,117 @@
             1 column
         </div>
       </div>
+
+      <!-- Pixel Grid !-->
+      <div class="gl-row">
+        <h3>The Pixel Grid</h3>
+      </div>
+      <!-- 12 col -->
+      <div class="gl-row">
+        <div class="gl-col gl-col-px_12">
+            12 column
+        </div>
+      </div>
+      <!-- 6 col -->
+      <div class="gl-row">
+        <div class="gl-col gl-col-px_6">
+            6 column
+        </div>
+        <div class="gl-col gl-col-px_6">
+            6 column
+        </div>
+      </div>
+      <!-- 4 col -->
+      <div class="gl-row">
+        <div class="gl-col gl-col-px_4">
+            4 column
+        </div>
+        <div class="gl-col gl-col-px_4">
+            4 column
+        </div>
+        <div class="gl-col gl-col-px_4">
+            4 column
+        </div>
+      </div>
+      <!-- 3 col -->
+      <div class="gl-row">
+        <div class="gl-col gl-col-px_3">
+            3 column
+        </div>
+        <div class="gl-col gl-col-px_3">
+            3 column
+        </div>
+        <div class="gl-col gl-col-px_3">
+            3 column
+        </div>
+        <div class="gl-col gl-col-px_3">
+            3 column
+        </div>
+      </div>
+      <!-- 2 col -->
+      <div class="gl-row">
+        <div class="gl-col gl-col-px_2">
+            2 column
+        </div>
+        <div class="gl-col gl-col-px_2">
+            2 column
+        </div>
+        <div class="gl-col gl-col-px_2">
+            2 column
+        </div>
+        <div class="gl-col gl-col-px_2">
+            2 column
+        </div>
+        <div class="gl-col gl-col-px_2">
+            2 column
+        </div>
+        <div class="gl-col gl-col-px_2">
+            2 column
+        </div>
+      </div>
+      <!-- 1 col -->
+      <div class="gl-row">
+        <div class="gl-col gl-col-px_1">
+            1 column
+        </div>
+        <div class="gl-col gl-col-px_1">
+            1 column
+        </div>
+        <div class="gl-col gl-col-px_1">
+            1 column
+        </div>
+        <div class="gl-col gl-col-px_1">
+            1 column
+        </div>
+        <div class="gl-col gl-col-px_1">
+            1 column
+        </div>
+        <div class="gl-col gl-col-px_1">
+            1 column
+        </div>
+        <div class="gl-col gl-col-px_1">
+            1 column
+        </div>
+        <div class="gl-col gl-col-px_1">
+            1 column
+        </div>
+        <div class="gl-col gl-col-px_1">
+            1 column
+        </div>
+        <div class="gl-col gl-col-px_1">
+            1 column
+        </div>
+        <div class="gl-col gl-col-px_1">
+            1 column
+        </div>
+        <div class="gl-col gl-col-px_1">
+            1 column
+        </div>
+      </div>
+
+
+
+
     </div>
   </section>
 

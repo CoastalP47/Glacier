@@ -65,7 +65,7 @@ p + .drop-cap{
  *
  */
 html,body{
-	font: normal @dsize/1.45 @dfont;
+	font: normal @dsize/@dline-height @dfont;
 }
 body{
 	-webkit-hyphens: auto;
@@ -127,6 +127,9 @@ h1,
 	font-size:  (@h1size/18)rem;
 	margin-bottom: @h1margin;
 	margin-bottom: (@h1margin/18)rem;
+	font-family:@h1font;
+	line-height:@h1line-height;
+	color:@h1color;
 }
 h2,
 .beta{
@@ -134,6 +137,9 @@ h2,
 	font-size: (@h2size/18)rem;
 	margin-bottom: @h2margin;
   margin-bottom: (@h2margin/18)rem;
+	font-family:@h2font;
+	line-height:@h2line-height;
+	color:@h2color;
 }
 h3,
 .gamma{
@@ -141,6 +147,9 @@ h3,
 	font-size: (@h3size/18)rem;
 	margin-bottom: @h3margin;
   margin-bottom: (@h3margin/18)rem;
+	font-family:@h3font;
+	line-height:@h3line-height;
+	color:@h3color;
 }
 h4,
 .delta{
@@ -148,6 +157,9 @@ h4,
 	font-size: (@h4size/18)rem;
 	margin-bottom: @h4margin;
   margin-bottom: (@h4margin/18)rem;
+	font-family:@h4font;
+	line-height:@h4line-height;
+	color:@h4color;
 }
 h5,
 .epsilon{
@@ -155,6 +167,9 @@ h5,
 	font-size: (@h5size/18)rem;
 	margin-bottom: @h5margin;
   margin-bottom: (@h5margin/18)rem;
+	font-family:@h5font;
+	line-height:@h5line-height;
+	color:@h5color;
 }
 h6,
 .zeta{
@@ -162,6 +177,9 @@ h6,
 	font-size: (@h6size/18)rem;
 	margin-bottom: @h6margin;
   margin-bottom: (@h6margin/18)rem;
+	font-family:@h6font;
+	line-height:@h6line-height;
+	color:@h6color;
 }
 /**
  *
@@ -171,12 +189,19 @@ h6,
  */
 p{
 	margin: auto auto 1.5em; /* bottom margin for paragraphs */
+		a{
+			color:@anchorcolor;
+			letter-spacing:@anchorletter-spacing;
+			font: @anchorfont-size/@anchorline-height @anchorfont;
+			text-decoration:none;
+			.anim;
+				&:hover{
+					color:@anchorcolor-hover;
+				}
+		}
 }
 strong{font-weight:bold;}
 em{font-style:italic;}
-a{color:@primaryColor;text-decoration:none;.anim;
-	&:hover{opacity:0.7;}
-}
 
 a.gl-slide{position:relative;overflow:hidden;padding:0 5px;display: inline-block;vertical-align: bottom;.anim;
 	span{position:relative;.anim;display:block;}
