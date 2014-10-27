@@ -80,31 +80,31 @@
 @columns:12;
 
   /* 479-767 */
-  @res4-end:767px;
-  @res4-start:479px;
+  @tablet-end:767px;
+  @tablet-start:479px;
   @tabletpadding: 0 0.5%;
   @tabletgutter: 1%;
   @tabletgutter_px:10px;
 
   /* 768-959 */
-  @res3-end:959px;
-  @res3-start:768px;
-  @res3-cont:768px;
+  @large-end:959px;
+  @large-start:768px;
+  @large-cont:768px;
   @largepadding: 0 0.5%;
   @largegutter: 1%;
   @largetgutter_px:10px;
 
   /* 960-1199 */
-  @res2-end:1199px;
-  @res2-start:960px;
-  @res2-cont:960px;
+  @desktop-end:1199px;
+  @desktop-start:960px;
+  @desktop-cont:960px;
   @desktoppadding: 0 0.5%;
   @desktopgutter: 1%;
   @desktopgutter_px:10px;
 
   /* 1200+ */
-  @res1:1200px;
-  @res1-cont:1200px;
+  @hires:1200px;
+  @hires-cont:1200px;
   @hirespadding: 0 0.5%;
   @hiresgutter: 1%;
   @hiresgutter_px:10px;
@@ -137,4 +137,9 @@
 @import "icons.less";
 @import "elements.less";
 @import "responsive.less";
+/*
+* non-responsive grid follows @desktopres
+*
+* @import "non-responsive.less";
+*/
 @import "project.less";

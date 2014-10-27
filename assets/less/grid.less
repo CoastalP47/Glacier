@@ -15,12 +15,6 @@ html,body{background:@bg;}
      .mixin-col;
 }
 
-
-.mixin-span(@num, @gutter_pc, @gutter_px, @padding, @max_columns) {
-    @one_col: (100% - (@gutter_pc * (@max_columns - 1))) / @max_columns;
-    width:(@one_col * @num) + (@gutter_pc * (@num - 1));
-    margin-left:@gutter_pc;
-}
 .mixin-col_first{
     margin-left:0;
     padding-left:0;
@@ -29,21 +23,47 @@ html,body{background:@bg;}
   margin-right:0;
   padding-right:0;
 }
+
+
+// percentage grid generator
+.mixin-span(@num, @gutter_pc, @gutter_px, @padding, @max_columns) {
+    @one_col: (100% - (@gutter_pc * (@max_columns - 1))) / @max_columns;
+    width:(@one_col * @num) + (@gutter_pc * (@num - 1));
+    margin-left:@gutter_pc;
+}
+.offset-span(@num, @gutter_pc, @gutter_px, @padding, @max_columns) {
+    @one_col: (100% - (@gutter_pc * (@max_columns - 1))) / @max_columns;
+    padding-left:(@one_col * @num) + (@gutter_pc * (@num - 1));
+    margin-left:@gutter_pc;
+}
 .generate-columns(@n, @i:1) when (@i =< @n){
   .gl-col_@{i}{
     .mixin-span(@i, @gutter_pc, @gutter_px, @padding, @max_columns);
   }
+  .gl-col-offset_@{i}{
+    .offset-span(@i, @gutter_pc, @gutter_px, @padding, @max_columns);
+  }
   .generate-columns(@n,(@i+1));
 }
 
+
+//pixel grid generator
 .mixin-span-px(@num, @gutter_pix, @padding, @max_columns, @resolution) {
     @one_col: (@resolution - (@gutter_pix * (@max_columns - 1))) / @max_columns;
     width:(@one_col * @num) + (@gutter_pix * (@num - 1));
     margin-left:@gutter_pix;
 }
+.offset-span-px(@num, @gutter_pix, @padding, @max_columns, @resolution) {
+    @one_col: (@resolution - (@gutter_pix * (@max_columns - 1))) / @max_columns;
+    padding-left:(@one_col * @num) + (@gutter_pix * (@num - 1));
+    margin-left:@gutter_pix;
+}
 .generate-columns-px(@n, @i:1) when (@i =< @n){
   .gl-col-px_@{i}{
     .mixin-span-px(@i, @gutter_pix, @padding, @max_columns, @resolution);
+  }
+  .gl-col-offset-px_@{i}{
+    .offset-span-px(@i, @gutter_pix, @padding, @max_columns, @resolution);
   }
   .generate-columns-px(@n,(@i+1));
 }

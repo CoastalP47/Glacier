@@ -1,5 +1,5 @@
 
-@media screen and (min-width: 0px) and (max-width: 478px) {
+@media screen and (min-width: 0px) and (max-width: 478px){
   .container{width:95%;margin:0 auto;}
   .gl-col {
       margin-left:0;
@@ -8,7 +8,7 @@
   }
 }
 
-@media screen and (min-width: @res4-start) and (max-width: @res4-end){
+@media screen and (min-width: @tablet-start) and (max-width: @tablet-end){
   @max_columns: @columns;
   @padding: @tabletpadding;
   @gutter_px: @tabletgutter;
@@ -30,14 +30,14 @@
   .generate-columns-px(@max_columns);
 }
 
-@media screen and (min-width: @res3-start) and (max-width: @res3-end){
-    @resolution:@res3-cont;
+@media screen and (min-width: @large-start) and (max-width: @large-end){
+    @resolution:@large-cont;
     @max_columns: @columns;
     @padding: @largepadding;
     @gutter_px: @largegutter;
     @gutter_pix:10px;
     @gutter_pc: @largegutter;
-    .container{width:@res3-cont;margin:0 auto;}
+    .container{width:@large-cont;margin:0 auto;}
     .gl-col{
         margin-left:@gutter_px;
         padding:@padding;
@@ -52,14 +52,14 @@
     .generate-columns-px(@max_columns);
 }
 
-@media screen and (min-width: @res2-start) and (max-width: @res2-end){
+@media screen and (min-width: @desktop-start) and (max-width: @desktop-end){
   @max_columns: @columns;
   @padding: @desktoppadding;
   @gutter_px: @desktopgutter;
   @gutter_pix:10px;
   @gutter_pc: @desktopgutter;
-  @resolution:@res2-cont;
-  .container{width:@res2-cont;margin:0 auto;}
+  @resolution:@desktop-cont;
+  .container{width:@desktop-cont;margin:0 auto;}
   .gl-col {
       margin-left:@gutter_px;
       padding:@padding;
@@ -74,14 +74,14 @@
   .generate-columns-px(@max_columns);
 }
 
-@media screen and (min-width: @res1){
+@media screen and (min-width: @hires){
   @max_columns: @columns;
   @padding: @hirespadding;
   @gutter_px: @hiresgutter;
   @gutter_pix:10px;
   @gutter_pc: @hiresgutter;
-  @resolution:@res1;
-  .container{width:@res1;margin:0 auto;}
+  @resolution:@hires;
+  .container{width:@hires;margin:0 auto;}
   .gl-col {
       margin-left:@gutter_px;
       padding:@padding;

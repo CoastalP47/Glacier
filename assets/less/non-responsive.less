@@ -1,0 +1,21 @@
+@media screen and (min-width: @desktop-start) and (max-width: @desktop-end){
+  @max_columns: @columns;
+  @padding: @desktoppadding;
+  @gutter_px: @desktopgutter;
+  @gutter_pix:10px;
+  @gutter_pc: @desktopgutter;
+  @resolution:@desktop-cont;
+  .container{width:@desktop-cont;margin:0 auto;}
+  .gl-col {
+      margin-left:@gutter_px;
+      padding:@padding;
+  }
+  .gl-row .gl-col:first-child{
+      .mixin-col_first;
+  }
+  .gl-row .gl-col:last-child{
+      .mixin-col_last;
+  }
+  .generate-columns(@max_columns);
+  .generate-columns-px(@max_columns);
+}
