@@ -12,7 +12,6 @@
 @tertiaryColor:rgba(52, 73, 94,1.0);
 
 /* typography */
-/* typography */
 @dfont:'Open Sans',sans-serif;
 @dsize:100%;
 @dline-height:1.65;
@@ -23,35 +22,35 @@
 @h1size:60px;
   @h1margin:9px;
   @h1line-height:64px;
-  @h1letter-spacing:0.1em;
+  @h1letter-spacing:normal;
   @h1font:@dfont;
   @h1color:@hcolor;
 
 @h2size:48px;
   @h2margin:11px;
   @h2line-height:50px;
-  @h2letter-spacing:0.15em;
+  @h2letter-spacing:normal;
   @h2font:@dfont;
   @h2color:@hcolor;
 
 @h3size:36px;
   @h3margin:16px;
   @h3line-height:38px;
-  @h3letter-spacing:0.025em;
+  @h3letter-spacing:normal;
   @h3font:@hfont;
   @h3color:@hcolor;
 
 @h4size:24px;
   @h4margin:22px;
   @h4line-height:26px;
-  @h4letter-spacing:0.1em;
+  @h4letter-spacing:normal;
   @h4font:@hfont;
   @h4color:@hcolor;
 
 @h5size:21px;
   @h5margin:25px;
   @h5line-height:23px;
-  @h5letter-spacing:0.1em;
+  @h5letter-spacing:normal;
   @h5font:@hfont;
   @h5color:@hcolor;
 
@@ -64,7 +63,7 @@
 
 @anchorcolor:#4d4845;
 @anchorfont:@dfont;
-@anchorletter-spacing:0.025em;
+@anchorletter-spacing:normal;
 @anchorfont-size:16px;
 @anchorline-height:22px;
   @anchorcolor-hover:#878483;
@@ -77,6 +76,7 @@
 
 
 /* grid settings */
+@row-margin:0 0 20px;
 @columns:12;
 
   /* 479-767 */
@@ -115,11 +115,13 @@
 
 
 /* input settings */
-@inputfont:80% solid @dfont;
-@inputpadding:3px 5px;
+@inputfont:14px/14px @dfont;
+@inputpadding:6px 15px;
 @inputborder:1px solid #bdc3c7;
 @inputborderradius:4px;
 @labelfont:12px @dfont;
+
+@formrow-margin:0 0 10px;
 
 @buttoncolor:rgba(236, 240, 241,1.0);
 @buttonbackground:@primaryColor;

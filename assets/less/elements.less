@@ -3,7 +3,7 @@
 }
 
 /* Forms */
-.gl-input-field{display:"block";}
+.gl-input-field{display:block;}
 form{
   input[type="text"],
   input[type="email"],
@@ -19,7 +19,13 @@ form{
   input[type="search"],
   input[type="url"],
   select,
-  textarea,{border:@inputborder;padding:@inputpadding;font:@inputfont;border-radius:@inputborderradius;.anim}
+  textarea,{
+      border:@inputborder;
+      padding:@inputpadding;
+      font:@inputfont;
+      border-radius:@inputborderradius;
+      .anim
+  }
 
   input[type="range"]{border:none;
     &:focus,&:hover{border:none;}
@@ -115,14 +121,37 @@ img{max-width:100%;height:auto;}
 .gl-img_right{float:right;margin:0 0 20px 20px;}
 
 
-/* Positioning */
+/* Positioning Semantics */
 .gl-pos_left{float:left;}
 .gl-pos_center{margin:0 auto;}
 .gl-pos_right{float:right;}
 
+.gl-pos-relative{position:relative;}
+.gl-pos-absolute{position:absolute;}
+.gl-pos-fixed{position:fixed;}
+
 .gl-text_left{text-align:left;}
 .gl-text_center{text-align:middle;}
 .gl-text_right{text-align:right;}
+
+
+/* Font Semantics */
+.gl-font-bold{font-weight:bold;}
+.gl-font-italic{font-style:italic;}
+.gl-font-underline{text-decoration:underline;}
+
+
+/* Layout Semantics */
+.gl-layout-margin{margin:0;}
+.gl-layout-padding{padding:0;}
+.gl-float-left{float:left;}
+.gl-float-right{float:right;}
+.gl-float-center{margin:0 auto;display:block;}
+
+
+/* Visibility Semantics */
+.gl-visibility-hidden{visibility:hidden;}
+.gl-visiblity-none{display:none;}
 
 
 /* Subnav */
